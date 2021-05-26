@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>My stock market app</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,8 +12,10 @@
 
   <body>
     <%= render "home/navbar" %>
-      
-      <%= yield %>
+      <br>
+      <div class="container">
+        <%= yield %>
+      </div>
 
     <%= render "home/footer" %>
   </body>
